@@ -116,7 +116,7 @@ pos_t minimize_downhill(
         {
             acc += square(p[dim]);
         }
-        return sqrt(acc);
+        return std::sqrt(acc);
     };
 
     const auto normalize = [&](const pos_t& p) -> pos_t
